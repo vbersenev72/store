@@ -1,5 +1,8 @@
 import "../App.css"
 
+
+import { Button, Card, CardActionArea, CardActions, CardContent, Typography } from "@mui/material"
+
 const ItemCard = ({props, AddToCart, ModalActive, setModalActive, contentModal, setContentModal}) => {
 
     const ChangeModal = (item) => {
@@ -14,15 +17,25 @@ const ItemCard = ({props, AddToCart, ModalActive, setModalActive, contentModal, 
 
     return (
         <div className="item">
-            <h1>{props.name}</h1>
-            <h1>{props.price}</h1>
+            <Card>
+                <CardActionArea>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h1">
+                        {props.name}
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+                    <CardActions>
+                        <Button variant="contained" color="primary" onClick={() => {AddToCart(props)}}>to Cart</Button>
+                        <Button variant="contained" color="primary" onClick={() => {
+                            setModalActive(true)
+                            ChangeModal(props)
+                        }}>view</Button>
+                    </CardActions>
 
-            <button onClick={() => {AddToCart(props)}} className="border-2 border-black hover:bg-amber-400">||Save||</button>
-            <button onClick={() => {
-                setModalActive(true)
-                ChangeModal(props)
-            }} className="border-2 border-black hover:bg-amber-400">||Check||</button>
+            </Card>
         </div>
+        
         
     )
 }

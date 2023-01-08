@@ -6,7 +6,7 @@ const showCart = ({cart, DeleteFromCart, ModalActive, setModalActive, contentMod
 // Продублировать пропсы ниже - в компонент Cart !!!!!!         (чисто для себя инфа - я уже путаться начал)
 
     return(
-        <div>
+        <div className="products-list">
                 <ModalItem ModalActive={ModalActive} setModalActive={setModalActive} contentModal={contentModal} setContentModal={setContentModal}/>
             {cart.map(item => (
                 <div key={item.id}>
@@ -20,7 +20,7 @@ const showCart = ({cart, DeleteFromCart, ModalActive, setModalActive, contentMod
 
 const showNothing = () => {
     return(
-    <div className="flex justify-center items-center text-2">
+    <div className="cart-nothing">
         Cart is nothing
     </div>
     )

@@ -1,17 +1,19 @@
+import { Button } from "@mui/material"
 import { Link } from "react-router-dom"
+import "./styles/header.css"
+
 
 
 const Header = () => {
 
     return (
-        <header className="flex justify-between bg-black mb-20">
-            <div className="header-logo">Logo</div>
+        <header className="header">
+            <div className="header-logo">Dildo Shop</div>
             <div className="header-links">
-                <Link to={"/"}>About</Link>
-                <Link to={"/cart"}>Cart</Link>
-                <Link to={"/products"}>Products</Link>
+                <Button variant="outline"><Link className="text-white" to={"/"}>About</Link></Button>
+                <Button variant="outline"><Link className="text-white" to={"/cart"}>Cart</Link></Button>
+                <Button variant="outline"><Link className="text-white" to={"/products"}>Products</Link></Button>
             </div>
-
         </header>
     )
 }

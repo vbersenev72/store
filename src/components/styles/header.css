@@ -1,0 +1,58 @@
+.header-logo {
+    margin-left: 5%;
+    font-size: 24px;
+
+    color: white;
+
+    flex-wrap: wrap;
+}
+
+.header {
+
+    position: fixed;
+    width: 100vw;
+    z-index: 9999; 
+    top: 0;
+    /* У модалки индекс 10000 */
+
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-bottom: 1rem;
+
+    background: rgb(49, 49, 233);
+}
+
+@media screen and (max-width: 405px) {
+    .header {
+        position: relative;
+        width: 100vw;
+        z-index: 9999; 
+        top: 0;
+        /* У модалки индекс 10000 */
+    
+    
+        display: inline-block;
+
+        flex-wrap: wrap;
+    
+        margin-bottom: 1rem;
+    
+        background: rgb(49, 49, 233);
+    }
+
+    .header-logo {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .header-links {
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
