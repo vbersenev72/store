@@ -18,14 +18,11 @@
 }
 
 .about-me {
-    display: inline-block;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.about-links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .about-project {
 
@@ -38,8 +35,27 @@
 }
 
 .about {
-    margin-top: 5vh;
-    
+    margin-top: 5vh;  
+}
 
-   
+.about-links {
+    margin-left: auto;
+    margin-right: auto;
+
+    justify-content: space-between;
+    display: flex;
+
+    width: 400px;
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .about-links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: auto;
+    }
 }

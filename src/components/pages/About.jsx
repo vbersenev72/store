@@ -6,15 +6,16 @@ const About = () => {
         <div className="about">
 
             <div className="about-me">
-
-                <h1 className="about-name" >Владислав, Frontend-Developer</h1>
+            
+                <h1 className="about-name">Владислав</h1>
+                <h1 className="about-name">Frontend-Developer</h1>
 
                 <div className="about-links">
 
-                    <a className="about-link" href="https://github.com/vbersenev72">GitHub</a>
-                    <a className="about-link" href="https://t.me/SuperParavozik2006">Telegram</a>
-                    <a className="about-link" href="https://vk.com/superskotstvo">VK</a>
-                    <a className="about-link" href="https://kwork.ru/user/vladbers123458775">Kwork</a>
+                    <Button variant="contained" href="https://github.com/vbersenev72">GitHub</Button>
+                    <Button variant="contained" href="https://t.me/SuperParavozik2006">Telegram</Button>
+                    <Button variant="contained" href="https://vk.com/superskotstvo">VK</Button>
+                    <Button variant="contained" href="https://kwork.ru/user/vladbers123458775">Kwork</Button>
                 
                 </div>
 
